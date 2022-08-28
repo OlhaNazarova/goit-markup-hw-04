@@ -1,0 +1,487 @@
+:root {
+    --accent-color: #2196F3;
+    --text-color: #212121;
+    --whitey-color: #ffffff;
+    --mail-color: #757575;
+    --background-color: #2F303A;
+    --desc-color: #F5F4FA;
+
+
+    }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+.list {list-style: none;
+}
+.link {
+text-decoration: none;
+}
+
+
+body {font-family: 'Roboto', sans-serif;
+    background-color: var(--whitey-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+
+
+/* =======================================HEADER */
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-container {
+display: flex;
+align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.menu-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.portfolio-item{
+    flex-basis: calc(100%/3 -30px);
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.logo {
+    margin-bottom: 20px;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+}
+.logo-up-color{
+    color: #000000;
+}
+.logo-tape {
+    margin-right: 93px;
+}
+
+
+
+.menu-link {
+    padding: 32px 0;
+    display: block;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color)
+}
+.menu-link:hover,
+.menu-link:focus {
+color: var(--accent-color);
+}
+.menu-link.current {
+    color: var(--accent-color)
+}
+
+.contact-phone-number{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--mail-color); 
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+color: var(--accent-color);
+}
+
+/*  =========================================HERO */
+
+.hero{
+background: var(--background-color);
+padding: 200px 0;
+}
+
+.main-title{
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--whitey-color);
+}
+
+.modal-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+color: var(--whitey-color);
+cursor: pointer;
+background: #188ce8;
+border-color: transparent;
+margin-right: auto;
+margin-left: auto;
+display: block;
+
+}
+.modal-btn:hover{
+    background-color: var(--accent-color);
+}
+.modal-btn:focus {
+background-color: #188CE8;
+
+}
+
+
+.modal-btn.current {
+    color: var(--whitey-color);
+    background-color: var(--accent-color)    
+}
+
+.modal-btn.active {
+    background-color: var(--accent-color);
+    color: var(--whitey-color);
+}
+
+.menu-item:not(:last-child) {
+margin-right: 50px;
+}
+
+.page-header {
+    border-bottom: #ececec 1px solid;
+    
+}
+
+/* ================================DESCRIPTION*/
+
+
+.desc{
+    margin-bottom: 10px;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--text-color);
+}
+
+.desc-item {
+width: 270px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--mail-color)
+}
+
+.list-title {
+  
+}
+
+.summary-title {
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+}
+
+.list-index {
+    gap: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==================================ABOUT */
+.section-title {
+    margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+.work {
+    text-align: center;
+    
+}
+
+.foto-list {
+    display: flex;
+}
+
+.work-review:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* ==================================TEAM */
+.team {
+    padding: 94px 0;
+    background-color: #F5F4FA;
+}
+
+.worker {
+    margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--text-color);
+}
+
+.worker-item {
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--mail-color);
+
+}
+
+.subtitle {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.foto-team:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.div-studio {
+    padding: 30px 0;
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 
+    0px 0px 4px 4px;
+    background-color: var(--whitey-color)
+}
+
+.social-list-item
+
+.foto-team:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--whitey-color)
+}
+.social-list-link:hover,
+.social-list-link:focus {
+    color: var(--whitey-color);
+    border-color: var(--accent-color);
+}
+
+/* =================================FOOTER */
+.footer {
+background: var(--background-color);
+}
+
+.color-back {
+    background: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.adress {
+font-style: normal;
+font-weight: 400;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--whitey-color);
+}
+
+.account {
+   margin-bottom: 9px;
+}
+
+.contact-link {
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================PORTFOLIO */
+.logo-color-footer {
+color: var(--whitey-color);
+}
+
+.desc-list-portfolio{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-color);
+border-color:var(--desc-color) ;
+}
+
+.gallery-portfolio{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--text-color);
+}
+
+.story{
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--mail-color);
+}
+
+.work-portfolio {
+    padding: 94px 0;
+}
+
+.btn-knob{
+    display: flex;
+justify-content: center;
+gap: 8px;
+}
+
+.div-portfolio {
+    background-color: var(--whitey-color);
+    border: 1px solid #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+border-top: none;
+}
+
+.portfolio-btn{
+    padding-top: 6px;
+    padding-bottom: 6px;
+padding-left: 22px;
+padding-right: 22px;
+border-radius: 4px;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+cursor: pointer;
+border-color: transparent;
+margin-bottom: 50px;
+}
+
+.port:hover,
+.port:focus {
+    color: var(--whitey-color);
+    background-color: var(--accent-color)
+}
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bbtn{
+    color: var(--whitey-color);
+    background-color:var(--accent-color);
+    border-color: transparent;
+}
