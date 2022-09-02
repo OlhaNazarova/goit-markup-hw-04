@@ -84,19 +84,21 @@ align-items: center;
     align-items: center;
 }
 
-.menu {
+.menu-contact {
     display: flex;
     align-items: center;
     margin-left: auto;
     gap: 30px;
+   
 }
 
-.menu-contact {
+
+/* .menu-contact {
     margin-bottom: 50px;
     align-items: center;
     margin-left: auto;
     
-}
+} */
 
 .portfolio-list{
     display: flex;
@@ -186,7 +188,7 @@ background-position: center;
 background-size: cover;
 margin-left: auto;
 margin-right: auto;
-width: 1600px;
+max-width: 1600px;
 }
 
 .main-title{
